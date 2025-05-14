@@ -1,0 +1,105 @@
+body {
+    font-family: sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+  
+  .container {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  button, a.button-link {
+    width: 100%;
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .button-validate {
+    background-color: #0070f3;
+  }
+  .button-validate:hover {
+    background-color: #005ac2;
+  }
+  
+  .button-activate {
+    background-color: #10b981;
+  }
+  .button-activate:hover {
+    background-color: #059669;
+  }
+  
+  .button-buy {
+    background-color: #6366f1;
+  }
+  .button-buy:hover {
+    background-color: #4f46e5;
+  }
+  
+  .button-cancel {
+    background-color: #ef4444;
+  }
+  .button-cancel:hover {
+    background-color: #dc2626;
+  }
+  
+  .status-box {
+    background: #f0f9ff;
+    color: #0369a1;
+    border-left: 4px solid #0369a1;
+    padding: 1rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    margin-top: 1rem;
+  }
+  
+  .error {
+    color: #dc2626;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  

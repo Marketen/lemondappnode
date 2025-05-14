@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  server:
+    build: ./server
+    container_name: lemondappnode-server
+    environment:
+      - LEMON_API_KEY=${LEMON_API_KEY}
+    command: ["/app/lemondappnode-cli", "list"]
+
+  web:
+    build: ./web
+    container_name: lemondappnode-web
+    ports:
+      - "3000:3000"
+    environment:
+      - LEMON_API_KEY=${LEMON_API_KEY}
+    working_dir: /app
+    volumes:
+      - ./web:/app
+      - /app/node_modules
+    command: ["npm", "run", "dev"]
